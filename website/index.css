@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    transition: 500ms linear;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+ /* Full width */
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: black;
+    color: orange;
+    display: flex;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #f9af11;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul  {
+    display: flex;
+    text-align: right;
+    margin-left: 65%;
+    transition: 200ms ease;
+    display: fixed;
+}
+li a {
+    margin: 15px;
+    transition: 200ms linear;
+    list-style: none;
+}
+span a {
+    color: orange;
+    padding: 5px;
+}
+li a:hover {
+    color: orange;
+}
+.btns {
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 0.9%;
+}
+button {
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background: rgb(242, 185, 14);
+    cursor: pointer;
+    transition: 500ms ease;
+    margin-top: 1%;
+}
+button:hover {
+    background: rgb(234, 205, 137);
+    animation: right;
+    animation-duration: 1s all;
+    animation-name: levin;
+}
+@keyframes levin {
+    from {top: 0;color: black;border: 1px solid black;background-color: black; color: white;}
+}
+img {
+    border-radius: 5px;
+}
+.h2 {
+    width: 30%;
+    margin-top: 15px;
+    font-family: sans-serif;
+    margin-left: 12%;
+    border-left: 5px solid orange;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    transition: 1s linear;
+    animation-name: example;
+    animation-duration: 500ms linear;  
+    animation-fill-mode: forwards;
+}
+@keyframes example {
+    from {top: 800px;color: black;}
+    to {top: 200px; background-color: rgb(255, 255, 255);border-top: none; margin-top: 20px;margin-left: 15%;background: rgb(60, 54, 54);color: white;transition: 1s all;}
+  }
+h2 {
+    margin-left: 10px;
+}
+h4 {
+    margin-left: 15%;
+    margin-top: 1%;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation-name: loft;
+    animation-duration: 500ms;  
+    animation-fill-mode: forwards;
+}
+@keyframes loft {
+    from {top: 800px;color: black;margin-top: 14px;}
+    to {top: 200px; background-color: rgb(255, 255, 255);border-top: none; margin-top: 20px;margin-left: 15%;background: rgb(255, 255, 255);color: rgb(0, 0, 0);margin-top: 20px;}
+  }
+  h4 a {
+    color: black;
+  }
+  h4 a:hover {
+       color: orange;
+  }
+  .network {
+    background: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.9px;
+    margin-top: 5px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 1px;
+    max-width: 1500px;
+    margin-top: 12px;
+  }
+  .more {
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1px;
+  }
+  .h1 {
+    margin-bottom: 12px;
+  }
+ .footer {
+    margin-bottom: 10px;
+ }
+ footer a:hover {
+    color: orange;
+ }
+ h5 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    text-size-adjust: 129px;
+ }
+ body {
+    background: rgb(230, 237, 237);
+    display: fixed;
+ }
+ li {
+    list-style: none;
+ }
+ img {
+    border-radius: 2%;
+ }
+ .foodplus {
+      max-width: 0.1%;
+ }
+ .mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}

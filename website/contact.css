@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background: black;
+    transition: 300ms ease-in-out;
+    opacity: 0.9;
+    font-family: sans-serif;
+    padding: 12px;
+    text-align: right;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul  {
+    display:flex;
+    text-align: right;
+    margin-left: 65%;
+    transition: 200ms ease;
+}
+li a {
+    margin: 15px;
+    transition: 200ms linear;
+}
+span a {
+    color: orange;
+    padding: 5px;
+}
+li a:hover {
+    color: orange;
+}

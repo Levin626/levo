@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    <div class="btns">
+        <button onclick="window.location='signup.html'" disabled="disabled" style="cursor: default;">disabled for update</button>
+        <button onclick="window.location='signup.html'" disabled="disabled" style="cursor: default;">disabled for update</button>
+    </div>
+    <Main>
+    <div class="w3-content w3-section" style="max-width:500px"></div>
+      
+        <a href="http://karibu.sasakonnect.net/community-events-article/konnect-coding-bootcamp-all-new/"><img class="mySlides w3-animate-fading" src="http://karibu.sasakonnect.net/media/media/img/events/coding_bootcamp_2.jpg" style="width: 50%; margin-left: 25%; margin-top: 30px;transition: 1s linear;"></a>  
+        <img class="mySlides w3-animate-fading" src="http://karibu.sasakonnect.net/media/media/img/announcements/konnect/Papyrus_2_KRlmtIS.png" style="width: 50%; margin-left: 25%; margin-top: 30px; transition: 1s linear;">
+        <img class="mySlides w3-animate-fading" src="http://karibu.sasakonnect.net/media/media/img/announcements/konnect/sunset_44.jpg" style="width: 50%; margin-left: 25%; margin-top: 30px; transition: 1s linear;">
+        <img class="mySlides w3-animate-fading" src="http://karibu.sasakonnect.net/media/media/img/announcements/konnect/Githurai_44.png" style="width: 50%; margin-left: 25%; margin-top: 30px; transition: 1s linear;">
+        <div class="picbtns" style="text-align: center;">
+          <button class="w3-button" onclick="plusDivs(-1)">&#10094; Prev</button>
+          <button class="w3-button" onclick="plusDivs(1)">Next &#10095;</button>
+        <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+        <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+      </div> 
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "flex";  
+        setTimeout(carousel, 9000);    
+      }
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+      </script>
+      <div class="h2" style="font-size:8vw;">
+      <H2 style="font-size:3vw;">
+        Whats new?
+      </H2>
+    </div>
+      <div class="h4">
+        <h4>
+           <a href="http://karibu.sasakonnect.net/'">Read sasakonnect.net latest articles</a> 
+        </h4>
+      </div>
+       <div class="h2">
+<h2 style="font-size:3vw;">
+    Network issues
+</h2>
+</div>
+       <div class="network" style="max-width: 1500px;margin-bottom: 25px;">
+        <h5 >Dear customer,there is a planned power Maintenance in Roysambu on 19/01/2023 form 9.00 A.M - 5.00 P.M. Areas to be affected include;Roysambu CO-op Bank,Canopy,Dragon Bar,Deliverance & adjacent customers.Our network service will be interrupted in the region until powr is fully restored. Thank you</h5>
+        <div class="btns">
+          <div class="issues">
+            <button onclick="window.location='http://karibu.sasakonnect.net/'">Report an issue</button>
+          </div>
+        </div>
+       </div>
+          <body>
+       
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+          }
+          </script>
+          
+        
+       
+        </script>
+      </Main>
+      <div class="more">
+        <div class="h1">
+            <h1 style="font-size:2vw;">
+                contact
+            </h1>
+        </div>
+      <div class="footer">
+        <footer>
+           <a href="contact.html">+254 704095504</a>
+        </footer>
+      </div>
+    </div>
+    <div class="finishing">
+        <h5 style="font-size:2vw;">Made by levin(STILL UPDATING IF SOMETHING DONT WORK THE WEBSITE IS NOT YET DONE)</h5>
+    </div>
+    <script>
+      window.alert('This website is still in the proccess of development some of the buttons will not work.I aologize for any inconvenience.THANK YOU')
+    </script>
+</body>
+</html>
